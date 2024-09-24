@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    color: black;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    background-color: #3A9973;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 2rem;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+/* Style for the toggle switch input */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.2rem;
+    height: 1.15rem;
+    background-color: #ccc;
+    border-radius: 0.625rem;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Styling the switch thumb (slider) */
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: white;
+    border-radius: 50%;
+    top: 0.13rem;
+    left: 0.16rem;
+    transition: 0.1s;
+}
+
+/* Styling the toggle switch when checked */
+input[type="checkbox"]:checked::before {
+    left: 1.15rem;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #3A9973;
+}
+
+
+.flex {
+    display: flex;
+    margin: auto;
+    padding: 0 1rem;
+    justify-content: space-between;
+    max-width: 30rem;
+}
+
+.toggle-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.125rem solid #3A9973;
+    border-radius: 0.32rem;
+    padding: 0.32rem 0rem;
+    /* width: 11rem; */
+}
+
+/* Style for the toggle switch label */
+.toggle-items h2 {
+    margin-bottom: 0.3rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 0 0.625rem;
+
+}
+
+.select-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.125rem 0.625rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0.4rem;
+}
+
+.select-all label {
+    margin: auto;
+    margin-right: 0.625rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #17744f ;
+}
+
+.toggle-item {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.625rem;
+    border-top: 0.125rem solid #3A9973;
+    width: 100%;
+    margin: auto;
+}
+
+.toggle-item label {
+    margin: auto;
+    margin-right: 0.625rem;
+    font-size: 1rem;
+}
+
+.centered-button {
+    text-align: center;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+    margin: auto;
+    margin-top: 1.25rem;
+    padding: 0.4rem 0.75rem;
+    background-color: #3A9973;
+    border: none;
+    border-radius: 0.32rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #3A9973;
+}
+
+.joke {
+    text-align: center;
+
+}
+
+.joke p {
+    margin: 0.7rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 2.2rem;
+    width: 100%;
+    background-color: #3A9973;
+    color: #154e37;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+
+footer img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
